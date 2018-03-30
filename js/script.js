@@ -1,7 +1,20 @@
 const result = [];
+var bodyEl = document.querySelector("body");
 
 function lotery() {
-    if (result.length === 6){
+    if (result.length === 6) {
+
+        //var isExist = true;
+        var button = document.createElement('button');
+        bodyEl.appendChild(button);
+        button.innerText = "Let's Play Again!";
+        button.classList.add('reload_button');
+
+        button.addEventListener("click", refreshPage);
+        function refreshPage() {
+            location.reload();
+        }
+
         return;
     }
 
@@ -18,6 +31,7 @@ function lotery() {
     div.textContent = resultLotery;
     document.body.appendChild(div); //w tej linijce dostajemy sie do document potem do body i tam dodajemy mu jako dziecko appendChild(div)  któ®y stworzylismy 
     result.push(resultLotery); //dodajemy nasz div do 6 do tablicy z wyników siedzi w zmiennej result
+
 }
 
 
