@@ -4,8 +4,8 @@ html {
 
 body {
     margin: 0;
-    height: 500vh;
-    background-image: linear-gradient(-45deg, #fff, #571845);
+    height: 100vh;
+    background-image: linear-gradient(#571845, #efefef);
     text-align: center;
 }
 
@@ -67,10 +67,14 @@ div {
 @keyframes ball{
     0%{
         transform: scale(0);
+         background-color: #000;
+        border-color: #000; 
+    }
+    75%{
+        background-color: #efefef;
     }
     100%{
         transform: scale(1);         /*rotateX(360deg)*/
-        background-color: beige;
-        border-color: #C70039;  
+      
     }
 }
