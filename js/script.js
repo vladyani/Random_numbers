@@ -1,16 +1,11 @@
 const result = [];
-var bodyEl = document.querySelector("body");
 
 function lotery() {
     if (result.length === 6) {
-
-        //var isExist = true;
-        var button = document.createElement('button');
-        bodyEl.appendChild(button);
-        button.innerText = "Let's Play Again!";
-        button.classList.add('reload_button');
-
-        button.addEventListener("click", refreshPage);
+        
+        var buttonReload = document.querySelector('.reload_button');
+        buttonReload.style.display = 'block';
+        buttonReload.addEventListener("click", refreshPage);
         function refreshPage() {
             location.reload();
         }
