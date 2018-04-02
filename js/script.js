@@ -26,6 +26,8 @@ function lotery() {
     div.textContent = resultLotery;
     document.body.appendChild(div); //w tej linijce dostajemy sie do document potem do body i tam dodajemy mu jako dziecko appendChild(div)  któ®y stworzylismy 
     result.push(resultLotery); //dodajemy nasz div do 6 do tablicy z wyników siedzi w zmiennej result
+    
+    
 
 }
 
