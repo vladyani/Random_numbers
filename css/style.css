@@ -58,7 +58,7 @@ div {
     height:80px;
     display:none;
     position:absolute;
-    top:400px;
+    top:300px;
     left:50%;
     transform: translate(-50%);
     text-align: center;
